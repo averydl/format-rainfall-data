@@ -5,13 +5,7 @@ Written by Derek Avery (dla)
 Usage Guide for "ReformatRainfallData.py" module, to be used in 
 conjunction with the "ExecuteReformat.py" script, or any other script
 written by other users for future application of the functions 
-contained in "ReformatRainfallData.py". Generally speaking, the workflow
-will be to write a separate python script (with the .py extension) -or- 
-modify the existing ExecuteReformat.py script to use the functions in the 
-ReformatRainfallData module. That is, new or existing script only uses functions
-that are written in the module, which is loaded with the 'import' statement at the 
-head of the script. All this is to say, in most cases, the code in the
-ReformatRainfallData.py module, should NOT need to be modified. 
+contained in "ReformatRainfallData.py". 
 
 
 Overview
@@ -28,8 +22,7 @@ in the module, what purpose they serve, and what their constraints are. The modu
 which has multiple arguments (i.e. function inputs, all of which are strings) which allow the user to generate new files. Each of 
 these three functions, addMissingDates(), combineRainfallFiles(), and arrangeByMonth(), and their arguments/constraints, 
 are detailed below. It is also important to note that generally, these functions should be executed in the order in which they
-are listed, using the output from each subsequent function call as the input to the next function call. An example workflow is illustrated schematically, 
-below, where parentheses "()" represent files, braces "[]" represent functions, and arrows "-->" represent input/output of the functions)
+are listed, using the output from each prior function call as the input to the next function call. An example workflow is illustrated schematically below, where parentheses "()" represent files, braces "[]" represent functions, and arrows "-->" represent input/output of the functions)
 
 Example: Take two files, (File1.txt) and (File2.txt), adding missing dates to each to create new files (File1DatesAdded.txt) and (File2DatesAdded.txt), 
 	 combine these resulting files to create a more comprehensive record file (File3.txt), and finally, process (File3.txt) to output a file
